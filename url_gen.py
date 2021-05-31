@@ -32,6 +32,7 @@ while True:
     keyword = input('[Optional] Keyword Search(i.e., Software Engineer): ')
         #'+str(keyword).replace(" ", "%20")+' -- Code Reference
          
+    # regx validates input text with no numbers and blank spaces match requirements
     if bool(re.match('[a-zA-Z\s]+$', keyword)) or ' ':
         break
     else:
